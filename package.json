@@ -1,0 +1,15 @@
+{
+  "name": "testjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js && zuul --ui tape --local 9966 -- test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.5.1",
+    "zuul": "^3.10.1"
+  }
+}
