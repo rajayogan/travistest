@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js && zuul --local 9966 -- test.js",
-    "ci" : "node test.js && zuul -- test.js"
+    "test": "mocha && zuul --local 9966 -- test.js",
+    "ci": "mocha && zuul -- test.js"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
     "tape": "^4.5.1",
     "zuul": "^3.10.1"
   }
